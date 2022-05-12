@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+#waves_cont {
+  margin-top: 100px;
+}
+
+canvas {
+  display: flex;
+  border-radius: 20px;
+}
