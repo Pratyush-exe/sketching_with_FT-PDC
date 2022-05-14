@@ -29,12 +29,12 @@ var s1 = function( sketch ) {
   }
 
   sketch.setup = function () {
-      let canvas1 = sketch.createCanvas(500, 500).parent("sketch_cont");
+      sketch.createCanvas(500, 500).parent("sketch_cont");
       sketch.background(0);
       sketch.fill(100);
       sketch.textAlign(sketch.CENTER);
       sketch.textSize(32);
-      sketch.text("Draw Something!", sketch.width / 2, sketch.height / 2);
+      sketch.text("Draw Something Here!", sketch.width / 2, sketch.height / 2);
   }
 
   function epicycles(x, y, rotation, fourier) {
@@ -75,7 +75,7 @@ var s1 = function( sketch ) {
           sketch.beginShape();
           sketch.noFill();
           sketch.strokeWeight(2);
-          sketch.stroke(255, 0, 255);
+          sketch.stroke(255, 255, 0);
           for (let i = 0; i < path.length; i++) {
               sketch.vertex(path[i].x, path[i].y);
           }

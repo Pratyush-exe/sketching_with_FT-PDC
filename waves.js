@@ -30,10 +30,8 @@ var s2 = function( sketch ) {
             sketch.noFill();
             sketch.ellipse(prevx, prevy, radius * 2);
 
-            //fill(255);
             sketch.stroke(255);
             sketch.line(prevx, prevy, x, y);
-            //ellipse(x, y, 8);
         }
         wave.unshift(y);
 
