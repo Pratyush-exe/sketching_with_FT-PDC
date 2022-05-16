@@ -47,7 +47,7 @@ var s1 = function( sketch ) {
           x += radius * Math.cos(freq * time + phase + rotation);
           y += radius * Math.sin(freq * time + phase + rotation);
 
-          sketch.stroke(255, 100);
+          sketch.stroke(255, 50);
           sketch.noFill();
           sketch.ellipse(prevx, prevy, radius * 2);
           sketch.stroke(255);

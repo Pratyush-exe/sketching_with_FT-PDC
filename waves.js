@@ -6,8 +6,8 @@ var s2 = function( sketch ) {
     let slider;
 
     sketch.setup = function() {
-        slider = sketch.createSlider(1, 50, 5).parent("waves_cont");
-        sketch.createCanvas(600, 400).parent("waves_cont");
+        sketch.createCanvas(1000, 400).parent("waves_cont");
+        slider = sketch.createSlider(1, 15, 3).parent("waves_cont");
     }
 
     sketch.draw = function() {
@@ -48,7 +48,7 @@ var s2 = function( sketch ) {
         time += 0.05;
 
 
-        if (wave.length > 250) {
+        if (wave.length > 600) {
             wave.pop();
         }
     }
